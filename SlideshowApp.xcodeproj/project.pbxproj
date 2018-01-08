@@ -13,6 +13,9 @@
 		BA83B3491FF4D3FB008DC2AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA83B3481FF4D3FB008DC2AA /* Assets.xcassets */; };
 		BA83B34C1FF4D3FB008DC2AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA83B34A1FF4D3FB008DC2AA /* LaunchScreen.storyboard */; };
 		BA83B3541FF4D41A008DC2AA /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA83B3531FF4D41A008DC2AA /* ResultViewController.swift */; };
+		BA83B35E1FFBFA5D008DC2AA /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = BA83B35B1FFBFA5D008DC2AA /* cat.png */; };
+		BA83B35F1FFBFA5D008DC2AA /* dog.png in Resources */ = {isa = PBXBuildFile; fileRef = BA83B35C1FFBFA5D008DC2AA /* dog.png */; };
+		BA83B3601FFBFA5D008DC2AA /* rensa.png in Resources */ = {isa = PBXBuildFile; fileRef = BA83B35D1FFBFA5D008DC2AA /* rensa.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		BA83B34B1FF4D3FB008DC2AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA83B34D1FF4D3FB008DC2AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA83B3531FF4D41A008DC2AA /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		BA83B35B1FFBFA5D008DC2AA /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
+		BA83B35C1FFBFA5D008DC2AA /* dog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dog.png; sourceTree = "<group>"; };
+		BA83B35D1FFBFA5D008DC2AA /* rensa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rensa.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +48,9 @@
 			children = (
 				BA83B3401FF4D3FB008DC2AA /* SlideshowApp */,
 				BA83B33F1FF4D3FB008DC2AA /* Products */,
+				BA83B35B1FFBFA5D008DC2AA /* cat.png */,
+				BA83B35C1FFBFA5D008DC2AA /* dog.png */,
+				BA83B35D1FFBFA5D008DC2AA /* rensa.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,7 +136,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA83B34C1FF4D3FB008DC2AA /* LaunchScreen.storyboard in Resources */,
+				BA83B3601FFBFA5D008DC2AA /* rensa.png in Resources */,
+				BA83B35F1FFBFA5D008DC2AA /* dog.png in Resources */,
 				BA83B3491FF4D3FB008DC2AA /* Assets.xcassets in Resources */,
+				BA83B35E1FFBFA5D008DC2AA /* cat.png in Resources */,
 				BA83B3471FF4D3FB008DC2AA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +315,7 @@
 				BA83B3521FF4D3FB008DC2AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

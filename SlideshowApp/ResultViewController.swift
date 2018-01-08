@@ -10,6 +10,11 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    @IBOutlet weak var expansionMonitor: UIImageView!
+    
+    @IBAction func unwind(_ segue: UIStoryboardSegue){
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
