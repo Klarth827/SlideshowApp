@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     //画像　配列
     var photos = ["cat.png","dog.png","rensa.png"]
     
+    //ImageViewへタップ操作ができるよう設定
+    
     //変数
     var photosNum: Int = 0 // photos Array の要素総数
     
@@ -38,9 +40,20 @@ class ViewController: UIViewController {
         if ssSwitch == false{
             ssSwitch = true
             startTimer()
+            
+            backButton.isEnabled = false
+            skipButton.isEnabled = false
+            backButton.isHidden = true
+            skipButton.isHidden = true
+            
         } else {
             ssSwitch = false
             resetTimer()
+            
+            backButton.isEnabled = true
+            skipButton.isEnabled = true
+            backButton.isHidden = false
+            skipButton.isHidden = false
         }
         
         print("再/停　押下 ssSwitch状態:\(ssSwitch)")
@@ -55,9 +68,12 @@ class ViewController: UIViewController {
         
     }
     
+    
+    
     //IBOutlet
     @IBOutlet weak var slideMonitor: UIImageView!
-    
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var skipButton: UIButton!
     
     // func
     func startTimer(){

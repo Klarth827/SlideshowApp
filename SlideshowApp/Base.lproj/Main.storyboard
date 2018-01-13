@@ -77,6 +77,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="xgk-Nr-qhd" id="ShO-Yr-JCe"/>
+                        <outlet property="skipButton" destination="8gf-D6-zOr" id="Sml-6g-QXQ"/>
                         <outlet property="slideMonitor" destination="tC2-yI-xrN" id="boP-oO-ngd"/>
                     </connections>
                 </viewController>
