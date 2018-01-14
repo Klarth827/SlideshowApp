@@ -61,6 +61,7 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		BA83B3401FF4D3FB008DC2AA /* SlideshowApp */ = {
 			isa = PBXGroup;

@@ -8,12 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController ,UIGestureRecognizerDelegate {
     
     //画像　配列
     var photos = ["cat.png","dog.png","rensa.png"]
     
-    //ImageViewへタップ操作ができるよう設定
     
     //変数
     var photosNum: Int = 0 // photos Array の要素総数
@@ -27,6 +26,9 @@ class ViewController: UIViewController {
     var ssSwitch: Bool = false //再生停止のスイッチ
     
     //IBAction
+    @IBAction func unwind(_ segue: UIStoryboardSegue){
+    }
+    
     @IBAction func back(_ sender: Any) {
         //戻るボタン
         prevPhotos()
@@ -41,8 +43,10 @@ class ViewController: UIViewController {
             ssSwitch = true
             startTimer()
             
+            slideMonitor.isUserInteractionEnabled = false
             backButton.isEnabled = false
             skipButton.isEnabled = false
+            
             backButton.isHidden = true
             skipButton.isHidden = true
             
@@ -50,8 +54,10 @@ class ViewController: UIViewController {
             ssSwitch = false
             resetTimer()
             
+            slideMonitor.isUserInteractionEnabled = true
             backButton.isEnabled = true
             skipButton.isEnabled = true
+            
             backButton.isHidden = false
             skipButton.isHidden = false
         }
@@ -125,6 +131,17 @@ class ViewController: UIViewController {
         slideMonitor.image = image
     }
     
+    func imageViewTapped(_ sender: UITapGestureRecognizer){
+        print("imageView(slidMonitor)がタップされた")
+        segueToResultViewController()
+        
+    }
+    
+    func segueToResultViewController(){
+        self.performSegue(withIdentifier: "toResultViewController", sender: self.image)
+    }
+    
+    
     // view overrride
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -138,6 +155,15 @@ class ViewController: UIViewController {
         //起動後、最初の写真表示
         displayImage()
         print("変数iの中身は　\(i)")
+        
+        //ImageViewへタップ操作ができるよう設定
+        
+        slideMonitor.isUserInteractionEnabled = true
+        
+        slideMonitor.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(ViewController.imageViewTapped(_:))))
+        
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -148,6 +174,16 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool){
         super.viewDidAppear(animated)
         
+    }
+    
+    //segue さっぱり
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "toResultViewController" {
+        let expansionData:ResultViewController = segue.destination as! ResultViewController
+        
+        expansionData.expansionImage = image
+    }
     }
     
 }
