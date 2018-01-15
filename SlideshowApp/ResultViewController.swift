@@ -12,7 +12,7 @@ class ResultViewController: UIViewController {
 
     @IBOutlet weak var expansionMonitor: UIImageView!
     
-    var expansionImage : UIImage! // 全画面のimageが使えてないのでスコープから外れてる。よって遷移でUIImageのデータを受け渡し。
+    var expansionImage : UIImage! // 前画面のimageが使えてないのでスコープから外れてる。よって遷移でUIImageのデータを受け渡し。
     
     override func viewDidLoad() {
         super.viewDidLoad()

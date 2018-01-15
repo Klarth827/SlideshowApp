@@ -80,7 +80,7 @@
                         <outlet property="backButton" destination="xgk-Nr-qhd" id="ShO-Yr-JCe"/>
                         <outlet property="skipButton" destination="8gf-D6-zOr" id="Sml-6g-QXQ"/>
                         <outlet property="slideMonitor" destination="tC2-yI-xrN" id="boP-oO-ngd"/>
-                        <segue destination="faL-Ou-y69" kind="show" id="jMT-6i-WID"/>
+                        <segue destination="faL-Ou-y69" kind="show" identifier="toResultViewController" id="jMT-6i-WID"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

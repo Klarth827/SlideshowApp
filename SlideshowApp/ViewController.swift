@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController ,UIGestureRecognizerDelegate {
+class ViewController: UIViewController , UIGestureRecognizerDelegate {
     
     //画像　配列
     var photos = ["cat.png","dog.png","rensa.png"]
@@ -138,6 +138,7 @@ class ViewController: UIViewController ,UIGestureRecognizerDelegate {
     }
     
     func segueToResultViewController(){
+        //segueのidentifier を書く必要がある（先生からのメモ）
         self.performSegue(withIdentifier: "toResultViewController", sender: self.image)
     }
     
