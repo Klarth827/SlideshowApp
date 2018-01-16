@@ -46,10 +46,7 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
             slideMonitor.isUserInteractionEnabled = false
             backButton.isEnabled = false
             skipButton.isEnabled = false
-            
-            backButton.isHidden = true
-            skipButton.isHidden = true
-            
+            ssButton.setTitle("停止", for: .normal)
         } else {
             ssSwitch = false
             resetTimer()
@@ -57,10 +54,8 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
             slideMonitor.isUserInteractionEnabled = true
             backButton.isEnabled = true
             skipButton.isEnabled = true
-            
-            backButton.isHidden = false
-            skipButton.isHidden = false
-        }
+            ssButton.setTitle("再生", for: .normal)
+            }
         
         print("再/停　押下 ssSwitch状態:\(ssSwitch)")
     }
@@ -80,6 +75,7 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
     @IBOutlet weak var slideMonitor: UIImageView!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var skipButton: UIButton!
+    @IBOutlet weak var ssButton: UIButton!
     
     // func
     func startTimer(){
@@ -162,7 +158,6 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
         slideMonitor.isUserInteractionEnabled = true
         
         slideMonitor.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(ViewController.imageViewTapped(_:))))
-        
         
         
     }

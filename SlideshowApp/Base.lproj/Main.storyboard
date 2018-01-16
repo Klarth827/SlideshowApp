@@ -32,7 +32,7 @@
                                 <rect key="frame" x="114.5" y="488" width="91" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <state key="normal" title="再生/停止"/>
+                                <state key="normal" title="再生"/>
                                 <connections>
                                     <action selector="startAndStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NAs-rW-Hdp"/>
                                 </connections>
@@ -80,12 +80,13 @@
                         <outlet property="backButton" destination="xgk-Nr-qhd" id="ShO-Yr-JCe"/>
                         <outlet property="skipButton" destination="8gf-D6-zOr" id="Sml-6g-QXQ"/>
                         <outlet property="slideMonitor" destination="tC2-yI-xrN" id="boP-oO-ngd"/>
+                        <outlet property="ssButton" destination="ZBR-mb-Oh7" id="urt-Dd-M9t"/>
                         <segue destination="faL-Ou-y69" kind="show" identifier="toResultViewController" id="jMT-6i-WID"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
+            <point key="canvasLocation" x="31.875" y="38.028169014084504"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="RfR-uw-nEE">
