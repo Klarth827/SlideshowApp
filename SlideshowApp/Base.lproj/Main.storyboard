@@ -100,6 +100,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y1V-i8-Nte">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeL-LM-X2P">
                                 <rect key="frame" x="16" y="20" width="31" height="30"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -110,9 +113,6 @@
                                     <segue destination="hpf-FM-phQ" kind="unwind" unwindAction="unwind:" id="6Rc-hW-V0h"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y1V-i8-Nte">
-                                <rect key="frame" x="0.0" y="60" width="320" height="508"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -120,7 +120,7 @@
                             <constraint firstAttribute="trailing" secondItem="Y1V-i8-Nte" secondAttribute="trailing" id="TdT-JZ-AYM"/>
                             <constraint firstItem="QeL-LM-X2P" firstAttribute="leading" secondItem="lJC-Bp-t9R" secondAttribute="leadingMargin" id="U81-yG-fsl"/>
                             <constraint firstItem="QeL-LM-X2P" firstAttribute="top" secondItem="vBN-LW-MYD" secondAttribute="bottom" id="V4e-60-iXG"/>
-                            <constraint firstItem="Y1V-i8-Nte" firstAttribute="top" secondItem="lJC-Bp-t9R" secondAttribute="top" constant="60" id="pEz-O3-U5R"/>
+                            <constraint firstItem="Y1V-i8-Nte" firstAttribute="top" secondItem="lJC-Bp-t9R" secondAttribute="top" id="pEz-O3-U5R"/>
                             <constraint firstAttribute="bottom" secondItem="Y1V-i8-Nte" secondAttribute="bottom" id="rZr-Pg-Y6f"/>
                         </constraints>
                     </view>
