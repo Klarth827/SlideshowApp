@@ -43,7 +43,7 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
             ssSwitch = true
             startTimer()
             
-            slideMonitor.isUserInteractionEnabled = false
+//            slideMonitor.isUserInteractionEnabled = false
             backButton.isEnabled = false
             skipButton.isEnabled = false
             ssButton.setTitle("停止", for: .normal)
@@ -51,7 +51,7 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
             ssSwitch = false
             resetTimer()
             
-            slideMonitor.isUserInteractionEnabled = true
+//            slideMonitor.isUserInteractionEnabled = true
             backButton.isEnabled = true
             skipButton.isEnabled = true
             ssButton.setTitle("再生", for: .normal)
@@ -130,7 +130,14 @@ class ViewController: UIViewController , UIGestureRecognizerDelegate {
     func imageViewTapped(_ sender: UITapGestureRecognizer){
         print("imageView(slidMonitor)がタップされた")
         segueToResultViewController()
-        
+        if ssSwitch == false{
+        } else {
+            ssSwitch = false
+            resetTimer()
+            backButton.isEnabled = true
+            skipButton.isEnabled = true
+            ssButton.setTitle("再生", for: .normal)
+        }
     }
     
     func segueToResultViewController(){

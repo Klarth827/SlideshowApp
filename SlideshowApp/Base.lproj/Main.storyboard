@@ -111,7 +111,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Y1V-i8-Nte">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="60" width="320" height="508"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -120,7 +120,7 @@
                             <constraint firstAttribute="trailing" secondItem="Y1V-i8-Nte" secondAttribute="trailing" id="TdT-JZ-AYM"/>
                             <constraint firstItem="QeL-LM-X2P" firstAttribute="leading" secondItem="lJC-Bp-t9R" secondAttribute="leadingMargin" id="U81-yG-fsl"/>
                             <constraint firstItem="QeL-LM-X2P" firstAttribute="top" secondItem="vBN-LW-MYD" secondAttribute="bottom" id="V4e-60-iXG"/>
-                            <constraint firstItem="Y1V-i8-Nte" firstAttribute="top" secondItem="lJC-Bp-t9R" secondAttribute="top" id="pEz-O3-U5R"/>
+                            <constraint firstItem="Y1V-i8-Nte" firstAttribute="top" secondItem="lJC-Bp-t9R" secondAttribute="top" constant="60" id="pEz-O3-U5R"/>
                             <constraint firstAttribute="bottom" secondItem="Y1V-i8-Nte" secondAttribute="bottom" id="rZr-Pg-Y6f"/>
                         </constraints>
                     </view>
@@ -131,7 +131,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5sv-Qt-Rlr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="hpf-FM-phQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="981" y="38"/>
+            <point key="canvasLocation" x="980.625" y="36.971830985915496"/>
         </scene>
     </scenes>
     <resources>
